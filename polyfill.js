@@ -253,8 +253,8 @@
       var listeners = dbs[i]._listeners;
       if (listeners && listeners.has(osName)) {
         var list = listeners.get(osName);
-        for (var i = 0; i < list.length; i++) {
-          if (list[i].options.includeValues) {
+        for (var j = 0; j < list.length; j++) {
+          if (list[j].options.includeValues) {
             return true;
           }
         }
